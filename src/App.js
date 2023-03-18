@@ -4,7 +4,7 @@ import Profile from './components/profile';
 import MyButton from './components/MyButton';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-function App() {
+const App = () => {
 
   const [getNavValue,setNavValue] = useState("");
 
@@ -12,6 +12,7 @@ function App() {
     setNavValue("Navigation Bar"); 
   }
 
+  
   const Contact = "Contact";
 
   const Btn = () => {
@@ -27,7 +28,16 @@ function App() {
     )
   } 
   return (
+  // <Router>
+  //   <Routes>
+  //     <Route path="/" element={<Home />}></Route>
+  //     <Route path="/about" element={<About />}> </Route>
+  //     <Route path="*" element={<NotFound />}>  </Route>
+  //     </Routes>
+  // </Router>
+
     <div className="App">
+
       <header className="App-header">
    <Navbar  NavHeading={getNavValue} Contact={Contact} />
         <h1>Ini First Project React</h1>
@@ -39,7 +49,7 @@ function App() {
       <Footer paragraf={Paragraf} />
       </header>
     </div> 
-  );
-}
+  
+)};
 
 export default App;
