@@ -2,7 +2,7 @@ const MyButton = (props) => {
 
     return (
      <div>
-        <button type="button" onClick={props.alert}>Click Me Bro!!</button>
+        <button type="button" onClick={props.alert}>Show Alert</button>
      </div>   
     )
 }
